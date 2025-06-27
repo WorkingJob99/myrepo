@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Secure Page</title>
+  <style>
+    * {
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #89f7fe, #66a6ff);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.3);
+      border-radius: 20px;
+      padding: 30px;
+      width: 90%;
+      max-width: 480px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      margin-bottom: 25px;
+      color: #eee;
+    }
+
+    .link-button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 14px;
+      padding: 12px 20px;
+      margin: 12px 0;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .link-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.03);
+      box-shadow: 0 0 10px #ffffff80;
+    }
+
+    .link-button img.logo {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 2px solid white;
+      background: #fff;
+    }
+
+    .link-button img.icon {
+      width: 22px;
+      height: 22px;
+    }
+  </style>
+
+  <!-- Disable Right Click & Inspect Shortcuts -->
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+      if (e.key === "F12" || e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 's' || e.key === 'a')) {
+        return false;
+      }
+    };
+  </script>
+</head>
+<body oncontextmenu="return false">
+  <div class="container">
+    <img class="profile-img" src="https://via.placeholder.com/100" alt="https://ibb.co/wZcQd4LW" />
+    <h1>Your Channel Name</h1>
+    <p class="subtitle">Creator with over 50k+ Family – In Community Since 2018 🔥</p>
+
+    <!-- Buttons -->
+    <a href="#" class="link-button">
+      <img class="logo" src="https://via.placeholder.com/28" alt="Logo">
+      <img class="icon" src="https://img.icons8.com/color/48/telegram-app.png" alt="Telegram">
+      Official Telegram
+    </a>
+
+    <a href="#" class="link-button">
+      <img class="logo" src="https://via.placeholder.com/28" alt="Logo">
+      <img class="icon" src="https://img.icons8.com/color/48/telegram-app.png" alt="Telegram">
+      2nd Telegram
+    </a>
+
+    <a href="#" class="link-button">
+      <img class="logo" src="https://via.placeholder.com/28" alt="Logo">
+      <img class="icon" src="https://img.icons8.com/color/48/chat.png" alt="Chat">
+      Official Chat Group
+    </a>
+  </div>
+</body>
+</html>
