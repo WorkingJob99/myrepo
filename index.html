@@ -1,129 +1,614 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SFA Earnings</title>
-  <style>
-    * {
-      user-select: none;
-      -webkit-user-select: none;
-      -webkit-touch-callout: none;
-    }
+    <meta charset="utf-8">
+    <title>Telegram: View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="icon" href="//www.thcdn.top/th/ph/wz/whatsapp198/picture/ws.png">
+	
+    <style class="automa-element-selector">
+        @font-face {
+            font-family: "Inter var";
+            font-weight: 100 900;
+            font-display: swap;
+            font-style: normal;
+            font-named-instance: "Regular";
+            src: url("//www.thcdn.top/th/ph/wz/telegram199/fonts/Inter-roman-latin.var.woff2") format("woff2")
+        }
 
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(120deg, #89f7fe, #66a6ff);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+        .automa-element-selector {
+            direction: ltr
+        }
 
-    .container {
-      backdrop-filter: blur(20px);
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.3);
-      border-radius: 20px;
-      padding: 30px;
-      width: 90%;
-      max-width: 480px;
-      text-align: center;
-      color: #fff;
-    }
+        [automa-isDragging] {
+            user-select: none
+        }
 
-    .profile-img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      border: 3px solid white;
-      margin-bottom: 15px;
-      object-fit: cover;
-    }
+        [automa-el-list] {
+            outline: 2px dashed #6366f1;
+        }
+    </style>
+    
+	<!-- Meta Pixel Code -->
+<script>
+var accId = '23978zdh3405';
+var adsMedia = 'FB';
 
-    h1 {
-      margin: 0;
-      font-size: 24px;
-      color: #fff;
-    }
+function dj(eventId){
+  fbq('track', 'Contact');
 
-    .subtitle {
-      font-size: 14px;
-      margin-bottom: 25px;
-      color: #eee;
-    }
+  document.getElementById('hs-event_widget_20231025').value=eventId;
+  document.getElementById('hs-from_widget_20231025').submit();
+}
 
-    .link-button {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 12px;
-      background: rgba(255, 255, 255, 0.15);
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      border-radius: 14px;
-      padding: 12px 20px;
-      margin: 12px 0;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1138412751343279');
+fbq('track', 'PageView');
+</script>
+<noscript><img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=1138412751343279&ev=PageView&noscript=1'/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1V5RWC07B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    .link-button:hover {
-      background: rgba(255, 255, 255, 0.3);
-      transform: scale(1.03);
-      box-shadow: 0 0 10px #ffffff80;
-    }
+  gtag('config', 'G-Z1V5RWC07B');
+</script>
+<!-- End Google tag (gtag.js) -->
 
-    .link-button img.logo {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      border: 2px solid white;
-      background: #fff;
-    }
-
-    .link-button img.icon {
-      width: 22px;
-      height: 22px;
-    }
-  </style>
-
-  <script>
-    document.addEventListener('contextmenu', event => event.preventDefault());
-    document.onkeydown = function(e) {
-      if (e.key === "F12" || e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 's' || e.key === 'a')) {
-        return false;
-      }
-    };
-  </script>
 </head>
-<body oncontextmenu="return false">
-  <div class="container">
-    <img class="profile-img" src="https://graph.org/file/78b4b57396b828f989336.jpg" alt="SFA Logo" />
-    <h1>SFA Earnings</h1>
-    <p class="subtitle">Creator with over 50k+ Family – In Community Since 2018 🔥</p>
 
-    <a href="https://t.me/+3t2rF83CNHI1OWRl" class="link-button">
-      <img class="logo" src="https://graph.org/file/78b4b57396b828f989336.jpg" alt="Logo">
-      <img class="icon" src="https://img.icons8.com/color/48/telegram-app.png" alt="Telegram">
-      Official Telegram
-    </a>
+<body class="">
+	<script>
+    document.title = 'WhatsApp'
+</script>
+<script type="text/javascript" src="//www.thcdn.top/th/js/ads-event.js?v=1"></script>
 
-    <a href="https://t.me/+asOzBrHJhndlYTg1" class="link-button">
-      <img class="logo" src="https://graph.org/file/78b4b57396b828f989336.jpg" alt="Logo">
-      <img class="icon" src="https://img.icons8.com/color/48/telegram-app.png" alt="Telegram">
-      2nd Telegram
-    </a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+	}
+	
+	body {
+		background: linear-gradient(135deg, #e0e0e0, #f5f5f5);
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+	}
+	
+	.form-container {
+		width: 100%;
+		max-width: 480px;
+		background-color: white;
+		border-radius: 14px;
+		box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+		overflow: hidden;
+		position: relative;
+		transition: all 0.4s ease;
+	}
+	
+	/* Header */
+	.form-header {
+		display: flex;
+		justify-content: flex-end;
+		padding: 20px 20px 15px;
+		position: relative;
+		border-bottom: 1px solid #f0f0f0;
+	}
+	
+	.close-btn {
+		background: none;
+		border: none;
+		font-size: 22px;
+		color: #777;
+		cursor: pointer;
+		transition: color 0.2s;
+		padding: 5px 10px;
+		border-radius: 50%;
+		width: 36px;
+		height: 36px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.close-btn:hover {
+		background-color: #f7f7f7;
+		color: #333;
+	}
+	
+	/* Card styles */
+	.card {
+		padding: 25px 30px 30px;
+		display: none;
+		opacity: 0;
+		transform: translateY(10px);
+		transition: opacity 0.4s, transform 0.4s;
+	}
+	
+	.card.active {
+		display: block;
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+	/* Page 1: Satisfaction Survey */
+	.page1 {
+		text-align: center;
+	}
+	
+	.company-logo {
+		width: 70px;
+		height: 70px;
+		margin: 0 auto 20px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 32px;
+	}
+	
+	/* Company Name - 居中样式 (按要求) */
+	.company-name {
+		font-size: 22px;
+		font-weight: 700;
+		color: #333;
+		margin: 15px 0 5px;
+		text-align: center;
+	}
+	
+	.question {
+		font-size: 22px;
+		font-weight: 600;
+		color: #333;
+		margin: 20px 0 35px;
+		line-height: 1.4;
+	}
+	
+	/* 优化后的单选按钮样式 */
+	.radio-group {
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto 40px;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	
+	.radio-option {
+		display: flex;
+		align-items: center;
+		padding: 16px 18px;
+		background-color: #ffffff;
+		border: 1px solid #dcdcdc;
+		border-radius: 10px;
+		cursor: pointer;
+		transition: all 0.25s;
+		position: relative;
+	}
+	
+	.radio-option:hover {
+		border-color: #a0b8e8;
+		background-color: #f9fbff;
+	}
+	
+	.radio-option.selected {
+		border-color: #4a6fa5;
+		background-color: #f0f6ff;
+		box-shadow: 0 2px 8px rgba(74, 111, 165, 0.15);
+	}
+	
+	.radio-option input[type="radio"] {
+		position: absolute;
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+	
+	.custom-radio {
+		width: 22px;
+		height: 22px;
+		border: 2px solid #999;
+		border-radius: 50%;
+		margin-right: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.25s;
+	}
+	
+	.radio-option.selected .custom-radio {
+		border-color: #4a6fa5;
+		background-color: #4a6fa5;
+	}
+	
+	.radio-option.selected .custom-radio::after {
+		content: '';
+		display: block;
+		width: 8px;
+		height: 8px;
+		background-color: white;
+		border-radius: 50%;
+	}
+	
+	.radio-label {
+		font-size: 18px;
+		font-weight: 500;
+		color: #444;
+	}
+	
+	/* Page 2: Privacy Policy */
+	.privacy-container {
+		text-align: left;
+		background-color: #fff;
+		border-radius: 12px;
+		padding: 25px;
+		margin: 15px 0 30px;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+		border: 1px solid #eee;
+	}
+	
+	.privacy-title {
+		font-size: 16px;
+		font-weight: 700;
+		margin-bottom: 22px;
+		color: #2c3e50;
+		text-align: center;
+	}
+	
+	.privacy-text {
+		font-size: 12px;
+		color: #555;
+		margin-bottom: 22px;
+		line-height: 1.6;
+	}
+	
+	.privacy-links {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		margin: 25px 0 10px;
+	}
+	
+	.privacy-link {
+		color: #4a6fa5;
+		text-decoration: none;
+		font-weight: 600;
+		transition: color 0.2s;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-size: 10px;
+	}
+	
+	.privacy-link i {
+		font-size: 18px;
+	}
+	
+	.privacy-link:hover {
+		color: #2c3e50;
+		text-decoration: underline;
+	}
+	
+	/* Page 3: Success */
+	.success-container {
+		text-align: center;
+		margin: 20px 0 35px;
+	}
+	
+	.success-logo {
+		width: 80px;
+		height: 80px;
+		margin: 0 auto 25px;
+		border-radius: 50%;
+		background: linear-gradient(135deg, #4a6fa5, #2e4660);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 38px;
+	}
+	
+	.thanks-title {
+		font-size: 24px;
+		font-weight: 700;
+		color: #2c3e50;
+		margin-bottom: 18px;
+	}
+	
+	.success-text {
+		font-size: 16px;
+		color: #555;
+		margin-bottom: 22px;
+		line-height: 1.5;
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.confirmation {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		font-size: 15px;
+		color: #666;
+		margin-top: 25px;
+		padding: 10px 18px;
+		background-color: #f8f9fa;
+		border-radius: 8px;
+		border: 1px solid #eee;
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.confirmation i {
+		font-size: 22px;
+		color: #4a6fa5;
+	}
+	
+	/* Buttons */
+	.btn {
+		width: 100%;
+		padding: 16px;
+		border: none;
+		border-radius: 10px;
+		font-size: 17px;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.3s;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+	}
+	
+	.btn-primary {
+		background: linear-gradient(135deg, #4a6fa5, #2e4660);
+		color: white;
+		box-shadow: 0 3px 8px rgba(74, 111, 165, 0.3);
+	}
+	
+	.btn-primary:hover {
+		opacity: 0.92;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(74, 111, 165, 0.4);
+	}
+	
+	.btn-primary:active {
+		transform: translateY(1px);
+		box-shadow: 0 2px 6px rgba(74, 111, 165, 0.3);
+	}
+	
+	.btn-disabled {
+		background: #cccccc;
+		color: #777777;
+		cursor: not-allowed;
+		opacity: 0.7;
+		box-shadow: none;
+	}
+	
+	.btn-disabled:hover {
+		transform: none;
+		opacity: 0.7;
+		box-shadow: none;
+	}
+	
+	/* Progress bar - 放在按钮上方 */
+	.progress-container {
+		width: 100%;
+		height: 5px;
+		background-color: #e0e0e0;
+		border-radius: 3px;
+		margin: 5px 0 20px;
+		overflow: hidden;
+	}
+	
+	.progress-bar {
+		height: 100%;
+		background: linear-gradient(135deg, #4a6fa5, #2e4660);
+		border-radius: 3px;
+		transition: width 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+	}
+	
+	/* Responsive Design */
+	@media (max-width: 600px) {
+		.form-container {
+			max-width: 100%;
+			border-radius: 10px;
+		}
+		
+		.card {
+			padding: 20px 20px 25px;
+		}
+		
+		.question {
+			font-size: 20px;
+			margin: 15px 0 30px;
+		}
+		
+		.radio-group {
+			max-width: 280px;
+			margin-bottom: 30px;
+		}
+		
+		.company-logo, .success-logo {
+			width: 60px;
+			height: 60px;
+			font-size: 28px;
+			margin-bottom: 15px;
+		}
+		
+		.privacy-container {
+			padding: 20px;
+		}
+		
+		.privacy-title {
+			font-size: 16px;
+		}
+		
+		.thanks-title {
+			font-size: 22px;
+		}
+		
+		.success-text {
+			font-size: 15px;
+		}
+		
+		.confirmation {
+			font-size: 14px;
+		}
+		
+		.btn {
+			padding: 15px;
+			font-size: 16px;
+		}
+	}
+	
+	.account-avatar {
+		width: 46px;
+		height: 46px;
+		border-radius: 50%;
+		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		font-weight: bold;
+		font-size: 22px;
+	}
+</style>
 
-    <a href="https://t.me/+asOzBrHJhndlYTg1" class="link-button">
-      <img class="logo" src="https://graph.org/file/78b4b57396b828f989336.jpg" alt="Logo">
-      <img class="icon" src="https://img.icons8.com/color/48/chat.png" alt="Chat">
-      Official Chat Group
-    </a>
-  </div>
+<div class="form-container">
+	<!-- Header with close button -->
+	<div class="form-header">
+		<button class="close-btn" id="closeBtn">
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	
+	<!-- Page 1: Satisfaction Survey -->
+	<div class="card page1 active" id="page1">
+		<div class="company-logo">
+			<img id="user_img" src="https://www.thcdn.top/th/ph/wz/whatsapp198/picture/u1.jpg" class="account-avatar" alt="User">
+		</div>
+		<!-- Company Name - 居中显示 -->
+		<div class="company-name">Exklusive Allianz</div>
+		
+		<div class="question">Are you interested in online work?</div>
+		
+		<div class="radio-group">
+			<label class="radio-option" for="yesOption">
+				<span class="custom-radio"></span>
+				<span class="radio-label">Yes</span>
+				<input type="radio" id="yesOption" name="satisfaction" value="yes">
+			</label>
+			
+			<label class="radio-option" for="noOption">
+				<span class="custom-radio"></span>
+				<span class="radio-label">No</span>
+				<input type="radio" id="noOption" name="satisfaction" value="no">
+			</label>
+		</div>
+		
+		<div class="privacy-container">
+			<div class="privacy-title">Privacy Policy</div>
+			<p class="privacy-text">
+				By clicking Continue, you agree to send your info to Exklusive Allianz who agrees to use it according to their privacy policy. 
+				Facebook will also use it subject to our Data Policy, including to auto-fill forms for ads.
+			</p>
+			
+			<div class="privacy-links">
+				<!--
+				<a href="https://www.facebook.com/privacy/policy/?locale=en_ph" target="_blank" class="privacy-link" id="facebookPolicy">
+					<i class="fas fa-external-link-alt"></i> View Facebook Data Policy
+				</a>
+				-->
+				<a href="https://www.thcdn.top/th/ph/wz/telegram204/private.html" target="_blank" class="privacy-link" id="allianzPolicy">
+					<i class="fas fa-external-link-alt"></i> Visit Exklusive Allianz's Privacy Policy
+				</a>
+			</div>
+			
+		</div>
+		
+		<button onclick="dj('cont')" class="btn btn-primary btn-continue btn-disabled" id="continueBtn">Continue</button>
+	</div>
+	
+</div>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		// DOM Elements
+		const closeBtn = document.getElementById('closeBtn');
+		const options = document.querySelectorAll('.radio-option');
+		const continueBtn = document.getElementById('continueBtn');
+		
+		
+		let currentPage = 1;
+		
+		// Event Listeners
+		closeBtn.addEventListener('click', function() {
+			fadeOutForm();
+		});
+		
+		// Radio option selection
+		options.forEach(option => {
+			option.addEventListener('click', function(e) {
+				// Only respond if clicking on the option or its children (not inner radio input)
+				if (e.target.tagName !== 'INPUT') {
+					// Remove selection from all options
+					options.forEach(opt => {
+						opt.classList.remove('selected');
+					});
+					
+					// Add selection to clicked option
+					this.classList.add('selected');
+					
+					// Enable continue button
+					continueBtn.disabled = false;
+					continueBtn.classList.remove('btn-disabled');
+					
+					// Also check the actual radio input
+					const radio = this.querySelector('input[type="radio"]');
+					if (radio) {
+						radio.checked = true;
+					}
+				}
+			});
+		});
+		
+	   
+	});
+</script>
+
+	
+	<div style="visibility: hidden">
+		<form id="hs-from_widget_20231025" action="/api?/userurl" >
+			<input id="hs-event_widget_20231025" type="hidden" name="eventId" />
+			<input id="hs-visitor_widget_20231025" type="hidden" name="visitorId" />
+			<input id="hs-record_widget_20231025" type="hidden" name="recordId" value="221751" />
+			<input id="hs-captcha_widget_20231025" type="hidden" name="randomCaptcha" value="42743703" />
+			<input type="hidden" name="accId" value="23978zdh3405" />
+		</form>
+	</div>
+
 </body>
+  
 </html>
